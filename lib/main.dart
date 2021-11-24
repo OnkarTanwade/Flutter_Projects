@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'home_page.dart';
-
 void main(){
   runApp(NewApp());
 }
@@ -13,7 +11,11 @@ class NewApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      home:HomePage(),
+      home: Material(
+        child:Center(
+          child: Text("data"),
+        ),
+      ),
     );
   }
 }
