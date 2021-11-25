@@ -12,8 +12,10 @@ class NewApp extends StatelessWidget {
 
     return MaterialApp(
       home: Material(
-        child:Center(
-          child: Text("data"),
+        child: Center(
+          child: Container(
+            child: Text("First App"),
+          ),
         ),
       ),
     );
