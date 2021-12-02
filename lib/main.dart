@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:android_app/utils/routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -19,8 +20,9 @@ class NewApp extends StatelessWidget {
     return MaterialApp(
       themeMode: ThemeMode.light,
       theme: ThemeData(
-        primarySwatch: Colors.green,
-        fontFamily: GoogleFonts.shadowsIntoLightTwo().fontFamily,
+        primarySwatch: Colors.blue,
+        //fontFamily: GoogleFonts.shadowsIntoLightTwo().fontFamily,
+        fontFamily: GoogleFonts.adamina().fontFamily,
       ),
       darkTheme: ThemeData(
         brightness: Brightness.dark,
@@ -28,8 +30,8 @@ class NewApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         "/": (context) => LoginPage(),
-        "/home": (context) => HomePage(),
-        "/login": (context) => LoginPage(),
+        Myroutes.homeRoute: (context) => HomePage(),
+        Myroutes.loginRoute: (context) => LoginPage(),
       },
     );
   }
